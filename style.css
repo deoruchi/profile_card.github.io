@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/*whole card*/
+
+
+body{
+
+    background: url(images/bg-pattern-bottom.svg) no-repeat -18% -51%, url(images/bg-pattern-top.svg) no-repeat 121% 101% ,rgb(3, 172, 172);
+
+}
+.card{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10rem 4rem 5rem auto;
+    background-color: white;
+    text-align:center;
+    margin:30% 5%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 33px rgba(0, 0, 0, 0.164);
+}
+
+
+/*top section*/
+
+.sec-1{
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(185, 76%, 47%);
+    border-radius:10px 10px 0 0 ;
+}
+
+/*mid image section*/
+
+.sec-2{
+    text-align: center;
+}
+.sec-2 img{
+    position:relative;
+    top:-3.6rem;
+    border: 5px solid white;
+    border-radius: 199px;
+}
+
+/*bottom section*/
+
+.sec-3{
+    border-bottom: 1px solid hsla(229, 23%, 23%, 0.377);
+    
+}
+.first{
+    font-weight:700 ;
+}
+.first span ,.second{
+    font-weight: 400;
+    opacity: 0.8;
+}
+.second{
+    font-size: 12px;
+    line-height: 2rem;
+}
+
+/*followers likes and photos section*/
+
+.sec-4{
+    margin:5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (min-width:1024px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        background: url(images/bg-pattern-bottom.svg) no-repeat 200% -114%, url(images/bg-pattern-top.svg) no-repeat -100% 160% ,rgb(3, 172, 172);
+    }
+
+    .card{
+        margin:10%;
+        width:28%;
+    }
+}
